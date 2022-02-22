@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Styles */
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior:smooth;
+}
+
+/* Intro Components Styles */
+.header-container::before {
+  content:'';
+  position: absolute;
+  inset:0;
+  background-image:url('https://images.wallpaperscraft.com/image/single/car_gray_wet_147750_1600x900.jpg');
+  background-size:cover;
+  opacity:0.8;
+  z-index:-1;
+  filter:blur(4px);
+}
+.search-button {
+	background:linear-gradient(to bottom, #c2c2c2 5%, #71b3bd 100%);
+}
+.search-button::before,
+.search-button::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 20px;
+  width: 20px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.search-button::before {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+@keyframes scroll-down {
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+.main-container {
+  background:linear-gradient(to top, #c2c2c2 5%, #71b3bd 100%);
+}
