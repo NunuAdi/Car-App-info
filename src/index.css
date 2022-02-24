@@ -64,7 +64,7 @@ html {
   background:linear-gradient(to top, #c2c2c2 5%, #71b3bd 100%);
 }
 .table-box {
-  width:60vw;
+  width: 60vw;
 }
 
 @media screen and (min-width:640px) and (max-width:1920px) {
