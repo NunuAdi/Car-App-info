@@ -16,60 +16,60 @@ export const DataTable = (props: IProps) => {
     },[]);
     
     return (
-        <div className="text-center mt-12">
+        <div className="text-center size-2 mt-12 table-data">
             {props.data?._id && (
-            <div>
-                <h1 className="text-5xl mb-12">מפרט רכב</h1>
-                <table>
+            <div className="flex flex-col items-center">
+                <h1 className="text-5xl mb-12 car-header">מפרט רכב</h1>
+                <table className="table-container table-box ">
                 <tbody>
                     <tr>
-                        <td className="w-80 border-black border-solid border text-2xl p-2"> {carData.mispar_rechev} </td>
-                        <td className="w-80 font-bold border-black border-solid border text-2xl p-2">מספר רכב</td>
+                        <td className="w-80 font-bold  border-black border-solid border">מספר רכב</td>
+                        <td className="w-80 border-black border-solid border"> {carData.mispar_rechev} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.tozeret_nm} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> מפעל ייצור </td>
+                        <td className="font-bold border-black border-solid border "> מפעל ייצור </td>
+                        <td className="border-black border-solid border"> {carData.tozeret_nm} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.kinuy_mishari} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> סוג דגם </td>
+                        <td className="font-bold border-black border-solid border"> סוג דגם </td>
+                        <td className="border-black border-solid border"> {carData.kinuy_mishari} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.ramat_gimur} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> רמת גימור </td>
+                        <td className="font-bold border-black border-solid border"> רמת גימור </td>
+                        <td className="border-black border-solid border"> {carData.ramat_gimur} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.shnat_yitzur} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> שנת ייצור </td>
+                        <td className="font-bold border-black border-solid border"> שנת ייצור </td>
+                        <td className="border-black border-solid border"> {carData.shnat_yitzur} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.zmig_kidmi} {"+"}{carData.zmig_ahori} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> גודל צמיגים </td>
+                        <td className="font-bold border-black border-solid border"> גודל צמיגים </td>
+                        <td className="border-black border-solid border"> {carData.zmig_kidmi} {"+"}{carData.zmig_ahori} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.tzeva_rechev} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> צבע </td>
+                        <td className="font-bold border-black border-solid border"> צבע </td>
+                        <td className="border-black border-solid border"> {carData.tzeva_rechev} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.baalut} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> בעלות נוכחית </td>
+                        <td className="font-bold border-black border-solid border"> בעלות נוכחית </td>
+                        <td className="border-black border-solid border"> {carData.baalut} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {carData.sug_delek_nm} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> סוג דלק </td>
+                        <td className="font-bold border-black border-solid border"> סוג דלק </td>
+                        <td className="border-black border-solid border"> {carData.sug_delek_nm} </td>
                     </tr>
 
                     <tr>
-                        <td className="border-black border-solid border text-2xl p-2"> {expiredDate} </td>
-                        <td className="font-bold border-black border-solid border text-2xl p-2"> תוקף רשיון רכב </td>
+                        <td className="font-bold border-black border-solid border"> תוקף רשיון רכב </td>
+                        <td className="border-black border-solid border"> {expiredDate} </td>
                     </tr>
                 </tbody>
                 </table>

@@ -8,12 +8,15 @@
 *::after {
   box-sizing:border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior:smooth;
+  direction:rtl;
 }
 
 /* Intro Components Styles */
@@ -21,11 +24,13 @@ html {
   content:'';
   position: absolute;
   inset:0;
-  background-image:url('https://images.wallpaperscraft.com/image/single/car_gray_wet_147750_1600x900.jpg');
-  background-size:cover;
+  background-image:url('./Images/car-desktop-1920x1200.jpg');
   opacity:0.8;
   z-index:-1;
   filter:blur(4px);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 .search-button {
 	background:linear-gradient(to bottom, #c2c2c2 5%, #71b3bd 100%);
@@ -54,6 +59,68 @@ html {
     opacity: 0;
   }
 }
+
 .main-container {
   background:linear-gradient(to top, #c2c2c2 5%, #71b3bd 100%);
+}
+.table-box {
+  width:60vw;
+}
+
+@media screen and (min-width:640px) and (max-width:1920px) {
+  .search-area > input::placeholder {
+    opacity:0;
+  }
+
+  td {
+    font-size :2rem;
+    padding:5px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+
+  .headers > h1 {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+
+  .car-header {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .headers > h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .search-area {
+    flex-wrap:wrap;
+    gap:2;
+    position:relative;
+  }
+  .head { 
+    display:none;
+  }
+  .point-button {
+    left:40%;
+  }
+  .search-area > input::placeholder {
+    opacity:1;
+    font-size:1rem;
+  }
+  tr {
+    font-size : 1rem;
+  }
+
+  .pollution div {
+    font-size:10px;
+    width:max-content;
+    height:max-content;
+  }
+  .pol-headers {
+    display:none;
+  }
 }
