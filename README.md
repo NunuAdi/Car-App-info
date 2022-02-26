@@ -7,6 +7,7 @@ Israel Car App information by car number
 This Project is a Simple React Typescript web application designed by Tailwind CSS.
 
 It gives you details & specs for every private vehicle in Israel given a license plate number,And shows the level of pollution of the vehicle
+
 <a href="https://ibb.co/4TD0VQC"><img src="https://i.ibb.co/58zJR7C/Car-Appimge2.png" alt="Car-Appimge2" border="0"></a>
 
 ## Live Application URL
