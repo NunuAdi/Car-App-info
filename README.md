@@ -1,5 +1,4 @@
 # Car-App-info
-<<<<<<< HEAD
 Israel Car App information by car number
 <a href="https://ibb.co/JKVwNXM"><img src="https://i.ibb.co/g3NLGsB/Car-Appimge1.png" alt="Car-Appimge1" border="0"></a>
 
@@ -9,12 +8,10 @@ This Project is a Simple React Typescript web application designed by Tailwind C
 It gives you details & specs for every private vehicle in Israel given a license plate number,And shows the level of pollution of the vehicle.
 <a href="https://ibb.co/4TD0VQC"><img src="https://i.ibb.co/58zJR7C/Car-Appimge2.png" alt="Car-Appimge2" border="0"></a>
 
-
 ## Live Application URL
 [Israel Car App](https://israel-car-app.netlify.app)
 
 This URL has the application deployed in with help of Netlify - web deployment platform.
-
 Click on the link to see the application !
 
 # Cloning and Running the Application in local
@@ -46,16 +43,3 @@ This project was made possible thanks to the following projects and tools.
 
 # License
 ORT Hermelin © Adi Nunu 2022
-
-=======
-Car App info by number.
-
-explanation:
-
-The site checks your vehicle number, and displays the vehicle details.
-
-And in addition shows the degree of pollution of the vehicle by color
-
-<a href="https://ibb.co/JKVwNXM"><img src="https://i.ibb.co/g3NLGsB/Car-Appimge1.png" alt="Car-Appimge1" border="0"></a>
-<a href="https://ibb.co/4TD0VQC"><img src="https://i.ibb.co/58zJR7C/Car-Appimge2.png" alt="Car-Appimge2" border="0"></a>
->>>>>>> cb878a5ba284b3f7bb28a0645fb38dc0a3737f2b
