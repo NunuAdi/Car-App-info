@@ -10,6 +10,9 @@ It gives you details & specs for every private vehicle in Israel given a license
 
 <a href="https://ibb.co/4TD0VQC"><img src="https://i.ibb.co/58zJR7C/Car-Appimge2.png" alt="Car-Appimge2" border="0"></a>
 
+### `Supported`
+#### Web, Mobile, Tablet
+
 ## Live Application URL
 [Israel Car App](https://israel-car-app.netlify.app)
 
